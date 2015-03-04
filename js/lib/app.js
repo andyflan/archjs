@@ -13,7 +13,7 @@ var Arch_App = function(element) {
 
 		console.log('Init app');
 
-		$(function() { 
+		$(function() {
 			that.initialiseControllers();
 		});
 	}
@@ -86,13 +86,13 @@ var Arch_App = function(element) {
 	this.initialiseControllers = function() {
 		var that = this;
 
-        for (var controller_name in this.controllers) {
-            $('[data-component=' + controller_name + ']').each(function(index, element) {
-                that.makeController(controller_name, element);
-            });
-        }
+    for (var controller_name in this.controllers) {
+        $('[data-component=' + controller_name + ']').each(function(index, element) {
+            that.makeController(controller_name, element);
+        });
+    }
 
-        return this;
+    return this;
 	}
 
 	this._getIdentifierFromControllerName = function(controller_name) {
