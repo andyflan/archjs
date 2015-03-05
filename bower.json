@@ -1,6 +1,6 @@
 {
   "name": "archjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/andyflan/archjs",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   "description": "Javascript component factory",
   "main": "arch.min.js",
   "ignore": [
-    "dist",
+    "src",
     "js",
     "node_modules",
     "scss",

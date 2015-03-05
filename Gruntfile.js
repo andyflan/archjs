@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                     outputStyle: 'expanded'
                 },
                 files: {
-                    'dist/css/arch.css': 'scss/app.scss'
+                    'src/css/arch.css': 'scss/app.scss'
                 }        
             }
         },
@@ -22,18 +22,18 @@ module.exports = function(grunt) {
         
             jquery: {
                 files: {
-                    'dist/js/vendor/jquery.min.js': ['js/vendor/jquery-1.11.2.js']
+                    'src/js/vendor/jquery.min.js': ['js/vendor/jquery-1.11.2.js']
                 }
             },
 
             arch: {
                 files: {
-                    'dist/js/arch.min.js': [
+                    'src/js/arch.min.js': [
                         'js/lib/app.js',
                         'js/lib/controller.js',
                         'js/lib/controller/reveal.js'
                     ],
-                    'src/arch.min.js': [
+                    'dist/arch.min.js': [
                         'js/lib/app.js',
                         'js/lib/controller.js'
                     ]
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 
             init: {
                 files: {
-                    'dist/js/init.min.js': ['js/initialise.js']
+                    'src/js/init.min.js': ['js/initialise.js']
                 }
             }
         },
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
                     port: 9000,
                     hostname: '0.0.0.0',
                     keepalive: true,
-                    base: 'dist',
+                    base: 'src',
                     open: 'http://localhost:<%= connect.server.options.port %>'
                 }
             }
