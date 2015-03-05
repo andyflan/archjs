@@ -7,8 +7,8 @@ var Arch_Controller = function() {
 	this.doInit = function() {
 		//call init and attach events if they exist
 		if (typeof this.init === 'function') this.init();
-    this.map_events();
 		if (typeof this.attachEvents === 'function') this.attachEvents();
+    this.map_events();
 	}
 
   this.map_events = function(){
