@@ -32,6 +32,10 @@ module.exports = function(grunt) {
                         'js/lib/app.js',
                         'js/lib/controller.js',
                         'js/lib/controller/reveal.js'
+                    ],
+                    'src/arch.min.js': [
+                        'js/lib/app.js',
+                        'js/lib/controller.js'
                     ]
                 }
             },

@@ -1,0 +1,27 @@
+{
+  "name": "archjs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/andyflan/archjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andyflan/archjs"
+  },
+  "authors": [
+    "Andy Flannery <andyflan@inheritweb.net>",
+    "Danny Wilson <dannywilson32@gmail.com>"
+  ],
+  "description": "Javascript component factory",
+  "main": "arch.min.js",
+  "ignore": [
+    "dist",
+    "js",
+    "node_modules",
+    "scss",
+    "Gruntfile.js",
+    "bower.json",
+    "package.json",
+    "readme.md",
+    "npm-debug.log"
+  ],
+  "license": "MIT"
+}
